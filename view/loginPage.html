@@ -1,0 +1,64 @@
+<!--
+<h1>Portfolio Page</h1>
+<hr/>
+<strong>This page shows multiple named views in action.</strong>
+ 
+<div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-default" ui-view="view1"></div>        
+    </div>
+    <div class="col-sm-6">
+      <div class="panel panel-default" ui-view="view2"></div>        
+    </div>
+</div>-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login page</title>
+    </head>
+<body>
+    
+-->
+    
+<!--<h1>{{message}}</h1>-->
+<div class="container login">
+<!--    <div class="jumbotron text-center">-->
+<!--        <h1>Login Form</h1>-->
+        
+        <div ng-cloak>
+<!--         <md-content layout-padding>-->
+            <form name="projectForm">
+                <label class="header">Login Form</label>
+               <md-input-container class="md-block">
+                  <label class="txt"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+                  <input required type="email" name="email" ng-model="data1.email"
+                     minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                  <div ng-messages="projectForm.email.$error" role="alert">
+                     <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                        Your email must be between 10 and 100 characters long and should be a valid email address.
+                     </div>
+                  </div>
+               </md-input-container>
+                <md-input-container class="md-block">
+                  <label class="txt"><span class="glyphicon glyphicon-lock"></span> Passwrod</label>
+                  <input required type="password" name="password" ng-model="data1.password"
+                     minlength="6" />
+                  <div ng-messages="projectForm.password.$error">
+                     <div ng-message="required">The Password should have at least 6 characters.</div>
+                  </div>
+               </md-input-container>
+                <md-input-container class="md-block">
+                    <button class="padd btn btn-primary"  ui-sref="Onlogin" type="submit" name="submit" ng-click="submit()">Submit</button>
+                    <button class="padd btn btn-primary" type="clear" name="cancel">Cancel</button>
+               </md-input-container>
+            </form>
+<!--         </md-content>-->
+      </div>
+<!--    </div>-->
+</div>
+    
+<!--
+    </body>
+    </html>-->
